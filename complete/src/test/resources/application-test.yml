@@ -1,0 +1,22 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: testLatticeApp
+  datasource:
+    url: jdbc:mysql://localhost:3306/hello
+    username: root
+    password: Macska8
+  jpa:
+    hibernate.ddl-auto: create
+
+endpoints:
+  health:
+    sensitive: false
+  env:
+    enabled: true
+    sensitive: false
+  metrics:
+    enabled: true
+    sensitive: false
